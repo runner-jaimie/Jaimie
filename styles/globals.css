@@ -3,82 +3,82 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "PP Neue Montreal";
-  src: url("/fonts/ppneuemontreal-book.woff") format("woff");
+  font-family: 'PP Neue Montreal';
+  src: url('/fonts/ppneuemontreal-book.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Basis Grotesque Arabic";
-  src: url("/fonts/BasisGrotesqueArabicPro-Regular.otf") format("opentype");
+  font-family: 'Basis Grotesque Arabic';
+  src: url('/fonts/BasisGrotesqueArabicPro-Regular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Monday Holiday";
-  src: url("/fonts/Monday-Holiday.otf") format("opentype");
+  font-family: 'Monday Holiday';
+  src: url('/fonts/Monday-Holiday.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Neue Montreal";
-  src: url("/fonts/NeueMontreal-Regular.otf") format("opentype");
+  font-family: 'Neue Montreal';
+  src: url('/fonts/NeueMontreal-Regular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Revolution";
-  src: url("/fonts/Revolution.otf") format("opentype");
+  font-family: 'Revolution';
+  src: url('/fonts/Revolution.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Sunflower";
-  src: url("/fonts/Sunflower.otf") format("opentype");
+  font-family: 'Sunflower';
+  src: url('/fonts/Sunflower.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 :root {
-  --background: #001f1e;
-  --foreground: #ffffff;
+  --background: #252126;
+  --foreground: #c4c5c9;
 }
 
 body {
-  font-family: "PP Neue Montreal", sans-serif;
+  font-family: 'PP Neue Montreal', sans-serif;
   color: var(--foreground);
   background: var(--background);
 }
 
 @keyframes fontChangeSmooth {
   0% {
-    font-family: "Revolution", sans-serif;
+    font-family: 'Revolution', sans-serif;
   }
   20% {
-    font-family: "Monday Holiday", sans-serif;
+    font-family: 'Monday Holiday', sans-serif;
   }
   40% {
-    font-family: "Neue Montreal", sans-serif;
+    font-family: 'Neue Montreal', sans-serif;
   }
   60% {
-    font-family: "Sunflower", sans-serif;
+    font-family: 'Sunflower', sans-serif;
   }
   80% {
-    font-family: "Basis Grotesque Arabic", sans-serif;
+    font-family: 'Basis Grotesque Arabic', sans-serif;
   }
   100% {
-    font-family: "PP Neue Montreal", sans-serif;
+    font-family: 'PP Neue Montreal', sans-serif;
   }
 }
 
