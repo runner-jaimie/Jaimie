@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
 export default function Hero() {
   const [fontChangeDone, setFontChangeDone] = useState(false); // 폰트 체인지 끝났는지
@@ -7,7 +7,7 @@ export default function Hero() {
   const [currentKeywordIndex, setCurrentKeywordIndex] = useState(0);
   const [isAnimatingOut, setIsAnimatingOut] = useState(false);
 
-  const keywords = ["use-friendly product", "web applications", "experiences"];
+  const keywords = ['use-friendly product', 'web applications', 'experiences'];
 
   useEffect(() => {
     // 1. 폰트 체인지 끝내는 타이밍 (예: 3초)
@@ -50,12 +50,12 @@ export default function Hero() {
       {/* 이름 */}
       <div
         className={`absolute bottom-12 left-12 flex text-[160px] font-bold leading-none  transition-transform duration-[2000ms] ease-[cubic-bezier(0.4,0,0.2,1)] ${
-          moveUp ? "translate-y-[-65vh]" : "translate-y-0"
+          moveUp ? 'translate-y-[-65vh]' : 'translate-y-0'
         }`}
       >
         <span
           className={`inline-block w-[120px] text-center mr-[-4px]
- ${!fontChangeDone ? "animate-font-change-smooth" : ""}`}
+ ${!fontChangeDone ? 'animate-font-change-smooth' : ''}`}
         >
           J
         </span>
@@ -64,23 +64,42 @@ export default function Hero() {
 
       {/* 메인 문장 */}
       {showContent && (
-        <div className="absolute top-[50%] left-12 transform -translate-y-1/2 flex flex-col space-y-8 animate-fade-in-up duration-[1800ms]">
-          <h1 className="max-w-5xl text-6xl font-extrabold leading-tight">
-            A developer passionate <br />
-            about creating beautiful
-            <br />
-            <span className="relative inline-block h-[80px] overflow-hidden text-teal-200">
-              <span
-                className={`block transition-all duration-500 ease-in-out ${
-                  isAnimatingOut
-                    ? "opacity-0 translate-y-8"
-                    : "opacity-100 translate-y-0"
-                }`}
-              >
-                {keywords[currentKeywordIndex]}
+        // <div className="absolute top-[50%] left-12 transform -translate-y-1/2 flex flex-col space-y-8 animate-fade-in-up duration-[1800ms]">
+        //   <h1 className="max-w-5xl text-6xl font-extrabold leading-tight">
+        //     A developer passionate <br />
+        //     about creating beautiful
+        //     <br />
+        //     <span className="relative inline-block h-[80px] overflow-hidden text-purple-400">
+        //       <span
+        //         className={`block transition-all duration-500 ease-in-out ${
+        //           isAnimatingOut
+        //             ? 'opacity-0 translate-y-8'
+        //             : 'opacity-100 translate-y-0'
+        //         }`}
+        //       >
+        //         {keywords[currentKeywordIndex]}
+        //       </span>
+        //     </span>
+        //   </h1>
+        // </div>
+        <div className="absolute top-[50%] left-0 w-full transform -translate-y-1/2 px-12 animate-fade-in-up duration-[1800ms]">
+          <div className="max-w-[1280px] mx-auto flex flex-col space-y-8">
+            <h1 className="max-w-5xl text-6xl font-extrabold leading-tight">
+              A developer passionate <br />
+              about creating beautiful <br />
+              <span className="relative inline-block h-[80px] overflow-hidden text-purple-400">
+                <span
+                  className={`block transition-all duration-500 ease-in-out ${
+                    isAnimatingOut
+                      ? 'opacity-0 translate-y-8'
+                      : 'opacity-100 translate-y-0'
+                  }`}
+                >
+                  {keywords[currentKeywordIndex]}
+                </span>
               </span>
-            </span>
-          </h1>
+            </h1>
+          </div>
         </div>
       )}
     </section>
