@@ -28,27 +28,31 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12">
           {/* 왼쪽 강조 텍스트 */}
           <div className="text-3xl font-medium leading-relaxed text-gray-300">
-            Over the years, I have worked on customer-facing products with a
-            strong focus on excellent user experience and accessibility
+            I'm a passionate developer from the vibrant city of Toronto,
+            Canada.🇨🇦 <br />
+            Believer in the power of technology to spark positive change.✨{' '}
+            <br />
+            Let’s innovate, collaborate, and build meaningful experiences
+            together.🚀
           </div>
 
           {/* 오른쪽 설명 */}
           <div className="text-base text-gray-400 space-y-6 leading-relaxed">
             <p>
-              Self-taught software engineer with a strong knowledge of
-              TypeScript, Swift, and Java. I am passionate about working on
-              meaningful projects that have a positive impact on people's lives.
+              During my 1-year co-op at the Toronto District School Board
+              (TDSB), I contributed to the development of internal CMS modules
+              using C#, ASP.NET, and MSSQL, helping improve content workflows
+              for thousands of users.
             </p>
             <p>
-              I have hands-on experience working on high-traffic,
-              customer-facing products and prioritize building clean,
-              maintainable codebases that enable continuous improvement and
-              scalability.
+              As a junior developer, I handled many incoming website requests
+              and worked closely with senior engineers to maintain and optimize
+              SQL procedures and backend systems.
             </p>
             <p>
-              I hold a Bachelor of Business Administration from Hult
-              International Business School in London and an International
-              Baccalaureate from Leysin American School in Switzerland.
+              This experience deepened my understanding of scalable development,
+              accessibility standards (WCAG 2.0 / AODA), and the importance of
+              cross-functional collaboration.
             </p>
           </div>
         </div>
