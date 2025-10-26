@@ -27,22 +27,18 @@ export default function About() {
         {/* 좌우 2열 레이아웃 */}
         <div className="grid md:grid-cols-2 gap-12">
           {/* 왼쪽 강조 텍스트 */}
-          <div className="text-3xl font-medium leading-relaxed text-gray-300">
-            I'm a passionate developer from the vibrant city of Toronto,
-            Canada.🇨🇦 <br />
-            Believer in the power of technology to spark positive change.✨{' '}
-            <br />
-            Let’s innovate, collaborate, and build meaningful experiences
-            together.🚀
+          <div className="text-3xl font-medium leading-relaxed text-gray-300 max-w-xl">
+            I'm a developer who loves turning ideas into elegant, user-friendly
+            products. I focus on creating intuitive, accessible experiences that
+            solve real problems and bring delight to the people who use them.
           </div>
 
           {/* 오른쪽 설명 */}
           <div className="text-base text-gray-400 space-y-6 leading-relaxed">
             <p>
               During my 1-year co-op at the Toronto District School Board
-              (TDSB), I contributed to the development of internal CMS modules
-              using C#, ASP.NET, and MSSQL, helping improve content workflows
-              for thousands of users.
+              (TDSB), I developed internal tools using C#, ASP.NET, and MSSQL to
+              streamline content workflows.
             </p>
             <p>
               As a junior developer, I handled many incoming website requests
@@ -50,9 +46,14 @@ export default function About() {
               SQL procedures and backend systems.
             </p>
             <p>
-              This experience deepened my understanding of scalable development,
-              accessibility standards (WCAG 2.0 / AODA), and the importance of
-              cross-functional collaboration.
+              I’m currently diving deep into Next.js and React, learning how to
+              build fast, scalable, and accessible web applications — and loving
+              every part of the journey.
+            </p>
+            <p>
+              I value clean code, good design, and meaningful collaboration. My
+              goal is to create things that are not only useful, but truly
+              enjoyable to use.
             </p>
           </div>
         </div>
