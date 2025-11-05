@@ -1,65 +1,72 @@
 export default function Experience() {
   return (
-    <section id="experience" className="relative min-h-screen px-12 py-24">
-      {/* 섹션 타이틀 */}
-      <h2 className="text-6xl font-bold tracking-tight mb-12 text-gray-100">
-        EXPERIENCE
-      </h2>
-      <hr className="border-t border-[#3A3A3A] mb-12" />
+    <section id="experience" className="w-full px-12 py-24">
+      <div className="max-w-[1280px] mx-auto">
+        {/* Title */}
+        <h2 className="text-[64px] font-bold tracking-wide leading-none">
+          EXPERIENCE
+        </h2>
 
-      {/* 경험 항목들 */}
-      <div className="space-y-20">
-        {/* ✅ TDSB 경험 */}
+        {/* 아래 선 */}
+        <hr className="border-t border-[#3A3A3A] mt-4 mb-20" />
+
+        {/* 전체 3열 레이아웃 */}
         <div className="grid md:grid-cols-3 gap-12">
-          {/* 왼쪽: 회사 정보 */}
-          <div className="text-gray-400 space-y-2">
-            <h3 className="text-4xl font-semibold text-white">TDSB</h3>
-            <p>Toronto District School Board</p>
-            <p>Jan 2024 — Dec 2024</p>
+          {/* 왼쪽 회사명 및 소개 */}
+          <div>
+            <h3 className="text-4xl font-semibold text-gray-200">TDSB</h3>
+            <p className="text-sm text-gray-400 mt-2">
+              Toronto District School Board
+            </p>
+            <p className="text-sm text-gray-400 mt-1">2023 — Present</p>
           </div>
 
-          {/* 가운데: 직무 디테일 */}
-          <div className="text-gray-400 space-y-2">
-            <p>
-              <span className="text-white font-medium">Position:</span> Junior
-              Developer
-            </p>
-            <p>
-              <span className="text-white font-medium">Location:</span> Toronto,
-              Canada
-            </p>
-            <p>
-              <span className="text-white font-medium">Industry:</span>{' '}
-              Education
-            </p>
-            <p>
-              <span className="text-white font-medium">Website:</span>{' '}
+          {/* 가운데 상세 항목 */}
+          <div className="space-y-2 text-sm text-gray-400">
+            <div className="flex">
+              <span className="w-24 text-gray-500">Position</span>
+              <span>Junior Developer</span>
+            </div>
+            <div className="flex">
+              <span className="w-24 text-gray-500">Location</span>
+              <span>Toronto, Canada</span>
+            </div>
+            <div className="flex">
+              <span className="w-24 text-gray-500">Industry</span>
+              <span>Education</span>
+            </div>
+            <div className="flex">
+              <span className="w-24 text-gray-500">Website</span>
               <a
                 href="https://www.tdsb.on.ca"
-                className="underline hover:text-purple-400"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="underline underline-offset-4 hover:text-teal-300 transition"
               >
                 www.tdsb.on.ca ↗
               </a>
-            </p>
+            </div>
           </div>
 
-          {/* 오른쪽: 설명 */}
-          <div className="text-gray-400 space-y-4">
+          {/* 오른쪽 설명 */}
+          <div className="text-base text-gray-400 space-y-6 leading-relaxed">
             <p>
-              As a junior developer at Canada’s largest school board, I
-              contributed to various internal platforms used by educators and
-              administrators across Toronto.
+              During my 1-year co-op at the Toronto District School Board
+              (TDSB), I developed internal tools using C#, ASP.NET, and MSSQL to
+              streamline content workflows.
             </p>
             <p>
-              I implemented new features, resolved bugs, and collaborated with
-              cross-functional teams to enhance accessibility and usability.
+              As a junior developer, I handled various website requests and
+              collaborated closely with senior developers to maintain SQL
+              procedures and backend systems.
+            </p>
+            <p>
+              I also contributed to improving internal user interfaces and
+              provided support for content administrators across multiple
+              departments.
             </p>
           </div>
         </div>
-
-        {/* 👉 이후 다른 경험 추가하고 싶으면 여기 밑에 또 <div className="grid md:grid-cols-3 ..."> 만들어서 계속 추가하면 돼 */}
       </div>
     </section>
   );
