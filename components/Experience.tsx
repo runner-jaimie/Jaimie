@@ -1,71 +1,65 @@
 export default function Experience() {
   return (
     <section id="experience" className="relative min-h-screen px-12 py-24">
-      <h2 className="text-6xl font-bold tracking-tight mb-16">EXPERIENCE</h2>
-      <hr className="border-t border-[#3A3A3A] mb-16" />
+      {/* 섹션 타이틀 */}
+      <h2 className="text-6xl font-bold tracking-tight mb-12 text-gray-100">
+        EXPERIENCE
+      </h2>
+      <hr className="border-t border-[#3A3A3A] mb-12" />
 
-      {/* TDSB Experience */}
-      <div className="mb-24">
-        <h3 className="text-4xl font-semibold mb-4">
-          Toronto District School Board
-        </h3>
-        <p className="mb-4 text-gray-400">Canada’s largest school board</p>
-        <p className="mb-4 text-gray-400">Jan 2024 — Dec 2024</p>
+      {/* 경험 항목들 */}
+      <div className="space-y-20">
+        {/* ✅ TDSB 경험 */}
+        <div className="grid md:grid-cols-3 gap-12">
+          {/* 왼쪽: 회사 정보 */}
+          <div className="text-gray-400 space-y-2">
+            <h3 className="text-4xl font-semibold text-white">TDSB</h3>
+            <p>Toronto District School Board</p>
+            <p>Jan 2024 — Dec 2024</p>
+          </div>
 
-        <div className="grid md:grid-cols-2 gap-16">
-          {/* Left column: position, location, etc */}
-          <div className="space-y-4 text-gray-400">
-            <div>
-              <span className="block font-semibold text-white">Position</span>
-              Junior Developer (Co-op)
-            </div>
-            <div>
-              <span className="block font-semibold text-white">Location</span>
-              Toronto, Ontario
-            </div>
-            <div>
-              <span className="block font-semibold text-white">Industry</span>
-              Public Education
-            </div>
-            <div>
-              <span className="block font-semibold text-white">Website</span>
+          {/* 가운데: 직무 디테일 */}
+          <div className="text-gray-400 space-y-2">
+            <p>
+              <span className="text-white font-medium">Position:</span> Junior
+              Developer
+            </p>
+            <p>
+              <span className="text-white font-medium">Location:</span> Toronto,
+              Canada
+            </p>
+            <p>
+              <span className="text-white font-medium">Industry:</span>{' '}
+              Education
+            </p>
+            <p>
+              <span className="text-white font-medium">Website:</span>{' '}
               <a
                 href="https://www.tdsb.on.ca"
+                className="underline hover:text-purple-400"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline hover:text-purple-400"
               >
                 www.tdsb.on.ca ↗
               </a>
-            </div>
+            </p>
           </div>
 
-          {/* Right column: description */}
-          <div className="space-y-6 text-gray-400">
+          {/* 오른쪽: 설명 */}
+          <div className="text-gray-400 space-y-4">
             <p>
-              At TDSB, I developed a new CMS module using C#, ASP.NET,
-              Bootstrap, and MSSQL to replace a manual HTML system — improving
-              workflow efficiency by over 80%.
+              As a junior developer at Canada’s largest school board, I
+              contributed to various internal platforms used by educators and
+              administrators across Toronto.
             </p>
             <p>
-              I enhanced stored procedures to boost SQL performance by 60%,
-              supporting over 100 daily active users. I also handled 70% of
-              incoming website-related requests, managing sprint planning in
-              Agile with Azure DevOps.
-            </p>
-            <p>
-              I collaborated closely with senior developers on sprint cycles,
-              version control, and continuous integration. I strictly followed
-              AODA & WCAG 2.0 accessibility standards to ensure inclusive web
-              experiences.
-            </p>
-            <p>
-              This experience deepened my interest in frontend technologies —
-              I’m currently exploring React and Next.js to build accessible,
-              scalable user interfaces.
+              I implemented new features, resolved bugs, and collaborated with
+              cross-functional teams to enhance accessibility and usability.
             </p>
           </div>
         </div>
+
+        {/* 👉 이후 다른 경험 추가하고 싶으면 여기 밑에 또 <div className="grid md:grid-cols-3 ..."> 만들어서 계속 추가하면 돼 */}
       </div>
     </section>
   );
