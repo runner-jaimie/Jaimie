@@ -10,19 +10,21 @@ export default function Experience() {
         {/* 아래 선 */}
         <hr className="border-t border-[#3A3A3A] mt-4 mb-20" />
 
+        {/* 회사명 (한 줄 전체 너비) */}
+        <h3 className="text-4xl font-semibold text-gray-200 mb-8">TDSB</h3>
+
         {/* 전체 3열 레이아웃 */}
         <div className="grid md:grid-cols-3 gap-12">
-          {/* 왼쪽 회사명 및 소개 */}
+          {/* 왼쪽 회사 설명 */}
           <div>
-            <h3 className="text-4xl font-semibold text-gray-200">TDSB</h3>
-            <p className="text-sm text-gray-400 mt-2">
+            <p className="text-base text-gray-400">
               Toronto District School Board
             </p>
-            <p className="text-sm text-gray-400 mt-1">2023 — Present</p>
+            <p className="text-base text-gray-400 mt-1">Jan 2024 — Dec 2024</p>
           </div>
 
           {/* 가운데 상세 항목 */}
-          <div className="space-y-2 text-sm text-gray-400">
+          <div className="space-y-2 text-base text-gray-400">
             <div className="flex">
               <span className="w-24 text-gray-500">Position</span>
               <span>Junior Developer</span>
