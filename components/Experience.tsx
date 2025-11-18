@@ -43,7 +43,7 @@ export default function Experience() {
                 href="https://www.tdsb.on.ca"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline underline-offset-4 hover:text-teal-300 transition"
+                className="underline underline-offset-4 text-purple-400 transition"
               >
                 www.tdsb.on.ca ↗
               </a>
