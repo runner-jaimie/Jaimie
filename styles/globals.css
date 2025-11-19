@@ -100,3 +100,27 @@ body {
 .animate-fade-in-up {
   animation: fadeInUp 2s ease-out both;
 }
+
+/* Animated underline for footer links */
+.footer-link {
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.footer-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px; /* underline thickness */
+  background-color: #4b4b4b; /* initial gray */
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-link:hover::after {
+  background-color: white; /* hover to white */
+  transform: scaleX(1); /* could add scale effect if you want */
+}
