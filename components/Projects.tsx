@@ -54,7 +54,7 @@ export default function Projects() {
             </a>
           </div>
 
-          {/* RIGHT — IMAGE (perfect layout) */}
+          {/* RIGHT — IMAGE */}
           <div className="col-span-12 md:col-span-7 flex justify-end">
             <div className="bg-[#09090b] border border-[#1f1f23] rounded-xl p-14 w-full max-w-[720px]">
               {/* White inner canvas */}
@@ -70,13 +70,14 @@ export default function Projects() {
         </div>
 
         {/* ===== PROJECT CARD 2 ===== */}
+        {/* LEFT — IMAGE */}
         <div className="grid grid-cols-12 gap-16 items-start mb-32">
           {/* LEFT — IMAGE (반대 레이아웃) */}
           <div className="col-span-12 md:col-span-7 flex justify-start">
-            <div className="bg-[#09090b] border border-[#1f1f23] rounded-xl p-10 w-full max-w-[720px]">
+            <div className="bg-[#09090b] border border-[#1f1f23] rounded-xl p-14 w-full max-w-[720px]">
               <div className="bg-white rounded-lg p-6 w-full h-full overflow-hidden">
                 <img
-                  src="/images/your-second-image.png"
+                  src="/images/bestseller-1.png"
                   alt="Project 2 preview"
                   className="w-full h-auto object-contain"
                 />
@@ -87,33 +88,37 @@ export default function Projects() {
           {/* RIGHT — TEXT */}
           <div className="col-span-12 md:col-span-5 flex flex-col space-y-6">
             <h3 className="text-3xl font-semibold text-gray-100 leading-tight">
-              Project Title Here
+              Google Best Sellers
             </h3>
 
             <p className="text-sm uppercase tracking-[0.2em] text-gray-500">
-              Category / Role
+              Frontend · API Integration
             </p>
 
             <p className="text-[14px] text-gray-500">2024</p>
 
             <div className="space-y-4 text-[15px] text-gray-400 leading-relaxed">
               <p>
-                Summary text for your second project. Describe what you built,
-                why it matters, and what the highlight features are.
+                Redesigned a Google Books–based side project into a NYT Best
+                Seller–powered book discovery experience with a clean,
+                bookstore-inspired UI for browsing and exploring top-ranked
+                titles.
               </p>
 
               <p>
-                You can also mention tech stack, challenges you solved, and the
-                result of the work.
+                Migrated from Google Books API to the New York Times Books API,
+                refactored data models and fetching logic in the Next.js App
+                Router, and improved list/detail layouts, loading states, and
+                error handling for a smoother reading workflow.
               </p>
             </div>
 
             <a
-              href="https://github.com/runner-jaimie/project-2"
+              href="https://bestsellernextjs.vercel.app/"
               target="_blank"
               className="text-purple-400 underline underline-offset-4 text-[15px]"
             >
-              github.com/runner-jaimie/project-2 ↗
+              bestsellernextjs.vercel.app ↗
             </a>
           </div>
         </div>
